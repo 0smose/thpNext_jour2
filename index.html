@@ -1,10 +1,68 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link type="text/css" rel="stylesheet" href="style.css">
 	<title>jour 2</title>
 </head>
 <body>
-	coucou
+	<div class="row">
+		<div class="col col-12">
+			<h1 class="text-center"> Billet gagnant ? </h1>
+		</div>
+	</div>
+	<div class="form text-center">
+		<div class="row mt-5">
+			<div class="col">
+				<input type="text" placeholder="your firstname" id="firstname">
+			</div>
+		</div>
+		<div class="row mt-5">
+			<div class="col">
+				<input type="text" placeholder="your lastname" id="lastname">
+			</div>
+		</div>
+		<div class="row mt-5">
+			<div class="col">
+				<input type="text" placeholder="your email" id="email" required="required">
+			</div>
+		</div>
+		<div class="mt-5" id="ticket"> 
+			<h3>NUMÉROS</h3>
+			<div class="row mt-5">
+				<div class=" col-sm ml-2">
+					<input type="text" id="number1" pattern="">
+				</div>
+				<div class=" col-sm ml-2">
+					<input type="text" id="number2" pattern="">
+				</div>
+				<div class=" col-sm ml-2">
+					<input type="text" id="number3" pattern="">
+				</div>
+				<div class="col-sm ml-2">
+					<input type="text" id="number4" pattern="">
+				</div>
+				<div class=" col-sm ml-2">
+					<input type="text" id="number5" pattern="">
+				</div>
+				<div class=" col-sm ml-2">
+					<input type="text" id="number6" pattern="">
+				</div>
+			</div>
+		</div>	
+		<div class="row mt-5">
+			<div class="col">
+				<button type="button" id="submit"> Submit </button>
+			</div>
+		</div>
+	</div>
+	<div class="UI__response">
+		<div class="row mt-5">
+			<div class="col col-6 mx-auto">
+				<p class="text-center blink_me" style="font-size: 30px;" id="response"></p>
+			</div>
+		</div>
+	</div>
 	<script src="index.js"></script>
 </body>
 </html>

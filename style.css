@@ -1,0 +1,22 @@
+body {
+	height: 100vh;
+	background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+	width: 100%;
+	overflow-x: hidden;
+}
+
+
+input {
+   text-align:center;
+}
+
+.blink_me {
+background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  animation: blinker 0.75s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
